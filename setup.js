@@ -32,7 +32,7 @@ module.exports = {
     },
     {
       file: 'app/store/configureStore.development.ts',
-      pattern: /counterActions/
+      pattern: /CounterSwitcher/
     },
     {
       file: 'app/app.global.scss',
