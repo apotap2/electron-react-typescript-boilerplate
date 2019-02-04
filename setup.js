@@ -20,6 +20,7 @@ module.exports = {
     { file: 'test/components/Counter.spec.tsx' },
     { file: 'test/containers/CounterPage.spec.tsx' },
     { file: 'test/switchers/counter.spec.ts' },
+    { file: 'test/switchers/__snapshots__/counter.spec.ts.snap' },
     { file: 'erb-logo.png' }
   ],
   // clean the following files by either clearing them
