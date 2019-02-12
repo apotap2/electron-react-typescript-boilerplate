@@ -23,7 +23,7 @@ describe('switchers', () => {
     const dispatch = spy();
     const getState = () => ({ counter: 1 });
     fn(dispatch, getState);
-    expect(dispatch.calledWith({ type: Actions.increment.TYPE })).toBe(true);
+    expect(dispatch.calledWith({ type: Actions.increment.TYPE() })).toBe(true);
   });
 
   it('should incrementIfOdd shouldnt create increment action if counter is even', () => {
@@ -41,7 +41,7 @@ describe('switchers', () => {
     const dispatch = spy();
     fn(dispatch);
     setTimeout(() => {
-      expect(dispatch.calledWith({ type: Actions.increment.TYPE })).toBe(true);
+      expect(dispatch.calledWith({ type: Actions.increment.TYPE() })).toBe(true);
       done();
     }, 5);
   });
